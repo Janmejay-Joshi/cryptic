@@ -30,33 +30,7 @@ const QuestionScreen = ({ history, match }) => {
             dispatch(listQuestionDetails(match.params.id));
         }
     }, [dispatch, match]);
-    function HiddenSollution() {
-    const [show, setShow] = useState(false);
-    const target = useRef(null);
 
-    return (
-        <Container> 
-        <Button ref={target} onClick={() => setShow(!show)}>
-            Click me to see
-        </Button>
-            <Overlay target={target.current} show={show} placement="bottom">
-            {({ placement, arrowProps, show: _show, popper, ...props }) => (
-            <div
-                {...props}
-                style={{
-                    padding: '2px 10px',
-                    fontsize: 32,
-                borderRadius: 3,
-                ...props.style,
-                }}
-            >
-                <strong>{question.sollution}</strong>
-            </div>
-            )}
-        </Overlay>
-        </Container>
-    );
-    }
     function ControlledTabs() {
         const [key, setKey] = useState("prompt");
     function showSolution(){
@@ -74,15 +48,21 @@ const QuestionScreen = ({ history, match }) => {
                 onSelect={(k) => setKey(k)}
             >
                 <Tab eventKey="prompt" title="Prompt">
+                    <Container>
                     <strong><h1>{question.name}</h1></strong>
-                    <h3>{question.prompt}</h3>
+                    <h5>{question.prompt}</h5>
                     <Image src={question.image}/>
+                    </Container>
                 </Tab>
                 <Tab eventKey="hints" title="Hints">
+                    <Container>
                     <h3>{question.hints}</h3>
+                    </Container>
                 </Tab>
                 <Tab eventKey="sollution" title="Sollution">
-                    <HiddenSollution/>
+                    <Container>
+                        <h3>{question.sollution}</h3>
+                    </Container>
                 </Tab>
             </Tabs>
         );
