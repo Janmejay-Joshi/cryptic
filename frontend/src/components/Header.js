@@ -2,7 +2,7 @@ import React from 'react'
 import { Route } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
+import { Navbar, Nav,Image, Container, NavDropdown } from 'react-bootstrap'
 import { logout } from '../actions/userActions'
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>Cryptic</Navbar.Brand>
+              <Navbar.Brand><Image src={"/uploads/logo.jpeg"} width={50}  height={50} roundedCircle fluid/>  Cryptic</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
