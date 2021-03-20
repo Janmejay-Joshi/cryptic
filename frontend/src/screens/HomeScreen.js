@@ -35,7 +35,7 @@ const HomeScreen = ({ match }) => {
           Go Back
         </Link>
       )}<About />
-      {(<Link to='/About' className='btn btn-light'>
+      {(<Link to='/About'>
         
       </Link>)}
     </>
