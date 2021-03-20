@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button'
 import { useDispatch, useSelector } from "react-redux";
 import {
     Image,
     Tabs,
+    Container,
+    Overlay,
     Tab,
 } from "react-bootstrap";
 import Message from "../components/Message";
@@ -15,6 +17,7 @@ import {
     createQuestionReview,
 } from "../actions/questionActions";
 import { QUESTION_CREATE_REVIEW_RESET } from "../constants/questionConstants";
+
 
 const QuestionScreen = ({ history, match }) => {
     const dispatch = useDispatch();
@@ -27,6 +30,33 @@ const QuestionScreen = ({ history, match }) => {
             dispatch(listQuestionDetails(match.params.id));
         }
     }, [dispatch, match]);
+    function HiddenSollution() {
+    const [show, setShow] = useState(false);
+    const target = useRef(null);
+
+    return (
+        <Container> 
+        <Button ref={target} onClick={() => setShow(!show)}>
+            Click me to see
+        </Button>
+            <Overlay target={target.current} show={show} placement="bottom">
+            {({ placement, arrowProps, show: _show, popper, ...props }) => (
+            <div
+                {...props}
+                style={{
+                    padding: '2px 10px',
+                    fontsize: 32,
+                borderRadius: 3,
+                ...props.style,
+                }}
+            >
+                <strong>{question.sollution}</strong>
+            </div>
+            )}
+        </Overlay>
+        </Container>
+    );
+    }
     function ControlledTabs() {
         const [key, setKey] = useState("prompt");
     function showSolution(){
@@ -52,9 +82,7 @@ const QuestionScreen = ({ history, match }) => {
                     <h3>{question.hints}</h3>
                 </Tab>
                 <Tab eventKey="sollution" title="Sollution">
-                    <div id="solution">
-                    <strong>{question.sollution}</strong>
-                    <Button onClick="showSolution()"variant="outline-info">Click to view solution</Button>{' '}</div>
+                    <HiddenSollution/>
                 </Tab>
             </Tabs>
         );
