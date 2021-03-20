@@ -97,7 +97,7 @@ const QuestionListScreen = ({ history, match }) => {
               <tr>
                 <th>ID</th>
                 <th>NAME</th>
-                <th>PRICE</th>
+                <th>DIFFICULTY</th>
                 <th>CATEGORY</th>
                 <th>BRAND</th>
                 <th></th>
