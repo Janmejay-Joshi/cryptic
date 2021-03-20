@@ -15,7 +15,7 @@
 - User profile with orders
 
 
-## Direction usage
+## Usage direction
 
 - Select your difficulty level of questions.
 - Select question of your choice.
