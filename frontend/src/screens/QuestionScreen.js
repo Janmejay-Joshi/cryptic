@@ -53,7 +53,7 @@ const QuestionScreen = ({ history, match }) => {
                 </Tab>
                 <Tab eventKey="sollution" title="Sollution">
                     <div id="solution">
-                    {question.sollution}
+                    <strong>{question.sollution}</strong>
                     <Button onClick="showSolution()"variant="outline-info">Click to view solution</Button>{' '}</div>
                 </Tab>
             </Tabs>
