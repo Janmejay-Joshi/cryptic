@@ -1,4 +1,4 @@
-# Hackathon_cryptic
+# CRYPTIC
 
 > Cipher project built with the MERN stack(MongoDB, Express, React, Node,), bootstrap & CSS.
 
