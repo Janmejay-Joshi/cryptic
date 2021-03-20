@@ -93,9 +93,9 @@ yarn run build
 ## Developers(with github ids)
 
 - [_Anishka Soni_](https://www.github.com/theani20)
-- [_Janmejay Joshi](https://www.github.com/Janmejay-Joshi)
+- [_Janmejay Joshi_](https://www.github.com/Janmejay-Joshi)
 - [_Vikash Kumar_](https://www.github.com/Codefreak69)
-- [_Sumit Singh Ghuraiya](https://www.github.com/sumitsinghghuraiya)
+- [_Sumit Singh Ghuraiya_](https://www.github.com/sumitsinghghuraiya)
 - [_Mohit Kumar Wankhade_](https://www.github.com/Mohit-Wankhade)
 
  
