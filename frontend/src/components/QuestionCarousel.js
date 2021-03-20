@@ -21,18 +21,19 @@ const QuestionCarousel = () => {
     }, [dispatch]);
 
     function ControlledTabs() {
-        const [key, setKey] = useState("easy");
+        const [key, setKey] = useState("medium");
 
         return (
             <Tabs
                 id="Difficulty Control"
                 activeKey={key}
                 onSelect={(k) => setKey(k)}
+                variant="pills"
             >
                 <Tab eventKey="easy" title="Easy">
                     <Row>
                         {questionEasy.questions.map((question) => (
-                            <Col key={question._id} sm={12} md={6} lg={4} xl={3}>
+                            <Col key={question._id} sm={10} md={5} lg={4} xl={3}>
                                 <Question question={question} />
                             </Col>
                         ))}

@@ -6,7 +6,7 @@ const Question = ({ question }) => {
     return (
         <Card className="my-3 p-3 rounded">
             <Link to={`/question/${question._id}`}>
-                <Card.Img src={question.image} variant="top" />
+                <Card.Img src={question.image} variant="top" fluid/>
             </Link>
 
             <Card.Body>

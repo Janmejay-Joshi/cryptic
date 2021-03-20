@@ -18,15 +18,15 @@ const Header = () => {
   return (
     <header>
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
-        <Container>
+        <Container fluid>
           <LinkContainer to='/'>
-              <Navbar.Brand><Image src={"/uploads/logo.jpeg"} width={50}  height={50} roundedCircle fluid/><strong>   Cryptic</strong></Navbar.Brand>
+              <Navbar.Brand><Image src={"/uploads/logo.jpeg"} width={60}  height={50} roundedCircle fluid/><strong style={{fontSize: 28}}>    Cryptic</strong></Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ml-auto'>
               {userInfo ? (
-                <NavDropdown title={userInfo.name} id='username'>
+                <NavDropdown style={{fontSize: 16}} title={userInfo.name} id='username'>
                   <LinkContainer to='/profile'>
                     <NavDropdown.Item>Profile</NavDropdown.Item>
                   </LinkContainer>
@@ -42,7 +42,7 @@ const Header = () => {
                 </LinkContainer>
               )}
               {userInfo && userInfo.isAdmin && (
-                <NavDropdown title='Admin' id='adminmenu'>
+                <NavDropdown style={{fontSize: 16}} title='Admin' id='adminmenu'>
                   <LinkContainer to='/admin/userlist'>
                     <NavDropdown.Item>Users</NavDropdown.Item>
                   </LinkContainer>
