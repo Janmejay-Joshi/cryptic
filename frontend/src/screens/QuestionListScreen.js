@@ -108,9 +108,9 @@ const QuestionListScreen = ({ history, match }) => {
                 <tr key={question._id}>
                   <td>{question._id}</td>
                   <td>{question.name}</td>
-                  <td>${question.price}</td>
+                  <td>{question.difficulty}</td>
                   <td>{question.category}</td>
-                  <td>{question.brand}</td>
+                  <td>{question.prompt}</td>
                   <td>
                     <LinkContainer to={`/admin/question/${question._id}/edit`}>
                       <Button variant='light' className='btn-sm'>
