@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeScreen from './screens/HomeScreen'
+import IndexScreen from './screens/IndexScreen'
 import QuestionScreen from './screens/QuestionScreen'
 import LoginScreen from './screens/LoginScreen'
 import RegisterScreen from './screens/RegisterScreen'
@@ -20,7 +21,6 @@ const App = () => {
       <main className='py-3'>
         <Container fluid>
           <Route path='/login' component={LoginScreen} />
-          <Route path='/register' component={RegisterScreen} />
           <Route path='/profile' component={ProfileScreen} />
           <Route path='/question/:id' component={QuestionScreen} />
           <Route path='/admin/userlist' component={UserListScreen} />
@@ -36,14 +36,9 @@ const App = () => {
             exact
           />
           <Route path='/admin/question/:id/edit' component={QuestionEditScreen} />
-          <Route path='/search/:keyword' component={HomeScreen} exact />
           <Route path='/page/:pageNumber' component={HomeScreen} exact />
-          <Route
-            path='/search/:keyword/page/:pageNumber'
-            component={HomeScreen}
-            exact
-          />
-          <Route path='/' component={HomeScreen} exact />
+          <Route path='/Q' component={HomeScreen} exact />
+          <Route path='/' component={IndexScreen} exact />
         </Container>
       </main>
       <Footer />
