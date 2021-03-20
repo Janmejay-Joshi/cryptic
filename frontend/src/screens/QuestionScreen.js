@@ -37,6 +37,7 @@ const QuestionScreen = ({ history, match }) => {
                 onSelect={(k) => setKey(k)}
             >
                 <Tab eventKey="prompt" title="Prompt">
+                    <strong><h1>{question.name}</h1></strong>
                     <h3>{question.prompt}</h3>
                     <Image src={question.image}/>
                 </Tab>
