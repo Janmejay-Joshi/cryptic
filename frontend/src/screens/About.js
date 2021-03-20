@@ -1,12 +1,12 @@
 import React from 'react'
-import ReactDOM from 'react-router-dom'
+import { Container } from 'react-bootstrap'
 
-
-export default function About() {
+const About = props => {
     return (
-        <div className = "container">
-        <h1 className = "text-center"> Welcome
-        </h1>
-        </div>
+        <Container>
+            <center><h3>Welcome</h3></center>
+        </Container>
     )
 }
+
+export default About
