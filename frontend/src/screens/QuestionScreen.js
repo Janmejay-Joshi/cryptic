@@ -51,6 +51,7 @@ const QuestionScreen = ({ history, match }) => {
                     <Container>
                     <strong><h1>{question.name}</h1></strong>
                     <h5>{question.prompt}</h5>
+                    <br/><br/>
                     <Image src={question.image}/>
                     </Container>
                 </Tab>
