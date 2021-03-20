@@ -1,4 +1,4 @@
-# Hackathon_cryptic
+# Cryptic
 
 > The Project is bassed on MERN Stack(MongoDB, Express, React, Node,) which consists of javascript frameworks for front and backend development.
 > It is a web interface for solving puzzles and helping people grow cryto graphic and analytic skills
