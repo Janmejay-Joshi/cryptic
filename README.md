@@ -11,10 +11,8 @@
 - Solve murder cases and mystries.
 - Interactive app
 - Hints are avialable for you.
-- User profile with orders
-- Admin product management
-- Admin user management
-- Admin Order details page
+- Admin Question management
+- Admin User management
 
 
 ## Usage
