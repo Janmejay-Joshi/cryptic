@@ -9,6 +9,7 @@ import Paginate from '../components/Paginate'
 import QuestionCarousel from '../components/QuestionCarousel'
 import Meta from '../components/Meta'
 import { listQuestions } from '../actions/questionActions'
+import About from '../screens/About'
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword
@@ -34,7 +35,13 @@ const HomeScreen = ({ match }) => {
           Go Back
         </Link>
       )}
+      <About />
+      {(<Link to='/About' className='btn btn-light'>
+        
+      </Link>)}
+
     </>
+  
   )
 }
 
