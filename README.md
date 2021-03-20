@@ -4,26 +4,29 @@
 > It is a web interface for solving puzzles and helping people grow cryto graphic and analytic skills
 >![cryptic](https://github.com/Janmejay-Joshi/cryptic/blob/main/uploads/logo.jpeg)
 
+---
 
 ## Features
 
+---
 - Amazing cyphers and riddles 
 - Choose your own difficulty level.
 - Solve murder cases and mystries.
 - Interactive app
 - Hints are available for you.
 - User profile with orders
-
+---
 
 ## Usage direction
 
+---
 - Select your difficulty level of questions.
 - Select question of your choice.
 - Try solving it yourself
 - You can also take the help of hints.
 - Look for Answers
 - Have fun🥳
-
+---
 
 ## Install Dependencies (frontend & backend)
 
@@ -71,7 +74,7 @@ yarn run build
 ---
 
 
-## Developers(with github ids)
+## Developers
 
 - [_Anishka Soni_](https://www.github.com/theani20)
 - [_Janmejay Joshi_](https://www.github.com/Janmejay-Joshi)
