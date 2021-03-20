@@ -57,7 +57,6 @@ yarn run build
 ## Tech Stack Used:
 
 ---
-
 - The Project is bassed on MERN Stack which consists of javascript frameworks for front and backend development
 
 - For the development of the backend we are using
