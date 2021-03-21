@@ -2,7 +2,9 @@
 
 > The Project is bassed on MERN Stack(MongoDB, Express, React, Node,) which consists of javascript frameworks for front and backend development.
 > It is a web interface for solving puzzles and helping people grow cryto graphic and analytic skills
->![cryptic](https://github.com/Janmejay-Joshi/cryptic/blob/main/uploads/logo.jpeg)
+
+
+![cryptic](/uploads/logo.jpeg)
 
 
 ## Features
@@ -22,6 +24,14 @@
 - You can also take the help of hints.
 - Look for Answers
 - Have fun🥳
+
+## Requirments
+
+- Node.js 14.6+
+- Yarn 1.22+
+ ```
+ npm install -g yarn
+ ```
 
 ## Install Dependencies (frontend & backend)
 
