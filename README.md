@@ -46,12 +46,12 @@ yarn run dev
 yarn run server
 ```
 
-## Build & Deploy
+## Admin Level Acess
 
+To be able to use admin level acess on the app sign in with the given credentials
 ```
-# Create frontend prod build
-cd frontend
-yarn run build
+EmailId: admin@example.com
+Password: 123456
 ```
 
 ## Tech Stack Used:
