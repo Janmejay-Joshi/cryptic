@@ -13,8 +13,8 @@ const AboutUs = ({ match }) => {
         <Container>
           <h1>About Us</h1>
           <p>
-            We are a team of 5 members, from{" "}
-            <b>MADHAV INSTITUTE OF TECHNOLOGY AND SCIENCE</b>. We collaborated
+            We are a team of 5 members, 1ST year students from{" "}
+            <b>MADHAV INSTITUTE OF TECHNOLOGY AND SCIENCE, GWALIOR, MADHYAPRADESH</b>. We collaborated
             to create this project{" "}
           </p>
         </Container>
@@ -37,7 +37,7 @@ const AboutUs = ({ match }) => {
                   <p>Avid LINUX enthusiast, Part-time gamer</p>
                   <p>janmejayjoshi2002@gmail.com</p>
                   <p>
-                    <Button href="https://www.instagram.com/janmejayjoshi/">
+                    <Button variant="success"href="https://www.instagram.com/janmejayjoshi/">
                       Contact
                     </Button>
                   </p>
@@ -60,7 +60,7 @@ const AboutUs = ({ match }) => {
                   <p>Interest in content writing and graphic designing</p>
                   <p>anishkasoni2000@gmail.com</p>
                   <p>
-                    <Button href="https://www.instagram.com/_the_ani_/">
+                    <Button variant="success"href="https://www.instagram.com/_the_ani_/">
                       Contact
                     </Button>
                   </p>
@@ -79,9 +79,13 @@ const AboutUs = ({ match }) => {
                   <p>A Gamer, A coder and sometimes a photographer</p>
                   <p>iamvikashkumar30@gmail.com</p>
                   <p>
-                    <Button href="https://www.instagram.com/vikashkr30">
+                    <Button
+                      href="https://www.instagram.com/vikashkr30"
+                      variant="success"
+                    >
+                      {" "}
                       Contact
-                    </Button>
+                    </Button>{" "}
                   </p>
                 </Card.Text>
               </Card.Body>
@@ -97,7 +101,7 @@ const AboutUs = ({ match }) => {
                   <p>Gaming is life</p>
                   <p>wmohit301@gmail.com</p>
                   <p>
-                    <Button href="https://www.instagram.com/mystic_luminary/">
+                    <Button variant="success"href="https://www.instagram.com/mystic_luminary/">
                       Contact
                     </Button>
                   </p>
@@ -107,9 +111,13 @@ const AboutUs = ({ match }) => {
           </Col>
           <Col>
             <Card>
-              
-                <Card.Img style={{height:300, width:250}}src="uploads\members\sumit.jpeg" alt="Sumit" fluid />
-              
+              <Card.Img
+                style={{ height: 300, width: 250 }}
+                src="uploads\members\sumit.jpeg"
+                alt="Sumit"
+                fluid
+              />
+
               <Card.Body>
                 <Card.Text>
                   <h2>Sumit Singh Ghuraiya</h2>
@@ -117,7 +125,7 @@ const AboutUs = ({ match }) => {
                   <p>Traveller, wanderer</p>
                   <p>sumitghuraiya@gmail.com</p>
                   <p>
-                    <Button href="https://www.instagram.com/sumitghuraiya/">
+                    <Button variant="success"href="https://www.instagram.com/sumitghuraiya/">
                       Contact
                     </Button>
                   </p>
