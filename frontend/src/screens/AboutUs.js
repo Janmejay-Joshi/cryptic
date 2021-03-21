@@ -108,7 +108,7 @@ const AboutUs = ({ match }) => {
           <Col>
             <Card>
               
-                <Card.Img style={{height:300, width:250}}src="uploads\members\Sumit.jpeg" alt="Sumit" fluid />
+                <Card.Img style={{height:300, width:250}}src="uploads\members\sumit.jpeg" alt="Sumit" fluid />
               
               <Card.Body>
                 <Card.Text>
