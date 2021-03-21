@@ -28,6 +28,12 @@ const Header = () => {
                        <strong style={{fontSize: 16}}>Questions</strong>
             </Badge>
                    </Navbar.Brand>
+                   <Navbar.Brand href="/AboutUs" >
+               <Badge pill variant="primary">
+
+                       <strong style={{fontSize: 16}}>About Us</strong>
+            </Badge>
+                   </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ml-auto'>
