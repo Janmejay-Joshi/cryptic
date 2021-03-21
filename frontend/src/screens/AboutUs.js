@@ -10,8 +10,7 @@ const AboutUs = ({ match }) => {
   return (
     <>
       <Meta />
-      <Container>
-      </Container>
+      <Container></Container>
     </>
   );
 };
