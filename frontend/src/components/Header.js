@@ -2,7 +2,7 @@ import React from 'react'
 import { Route } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Navbar, Nav,Image, Container, NavDropdown } from 'react-bootstrap'
+import { Navbar,Badge, Nav,Image, Container, NavDropdown } from 'react-bootstrap'
 import { logout } from '../actions/userActions'
 
 const Header = () => {
@@ -22,6 +22,12 @@ const Header = () => {
           <LinkContainer to='/'>
               <Navbar.Brand><Image src={"/uploads/logo.jpeg"} width={60}  height={50} roundedCircle fluid/><strong style={{fontSize: 28}}>    Cryptic</strong></Navbar.Brand>
           </LinkContainer>
+                   <Navbar.Brand href="/Q" >
+               <Badge pill variant="primary">
+
+                       <strong style={{fontSize: 16}}>Questions</strong>
+            </Badge>
+                   </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ml-auto'>
