@@ -13,7 +13,7 @@ const AboutUs = ({ match }) => {
         <Container>
           <h1>About Us</h1>
           <p>
-            We are a team of 5 members, 1ST year students from{" "}
+            We are a team of 5 members, 1st year students from{" "}
             <b>MADHAV INSTITUTE OF TECHNOLOGY AND SCIENCE, GWALIOR, MADHYAPRADESH</b>. We collaborated
             to create this project{" "}
           </p>
