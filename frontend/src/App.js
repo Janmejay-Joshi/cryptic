@@ -7,6 +7,7 @@ import HomeScreen from './screens/HomeScreen'
 import IndexScreen from './screens/IndexScreen'
 import QuestionScreen from './screens/QuestionScreen'
 import LoginScreen from './screens/LoginScreen'
+import AboutUs from './screens/AboutUs'
 import RegisterScreen from './screens/RegisterScreen'
 import ProfileScreen from './screens/ProfileScreen'
 import UserListScreen from './screens/UserListScreen'
@@ -38,6 +39,7 @@ const App = () => {
           <Route path='/admin/question/:id/edit' component={QuestionEditScreen} />
           <Route path='/page/:pageNumber' component={HomeScreen} exact />
           <Route path='/Q' component={HomeScreen} exact />
+          <Route path='/AboutUs' component={AboutUs} exact />
           <Route path='/' component={IndexScreen} exact />
         </Container>
       </main>
