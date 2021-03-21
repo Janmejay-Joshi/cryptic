@@ -23,6 +23,14 @@
 - Look for Answers
 - Have fun🥳
 
+## Requirments
+
+- Node.js 14.6+
+- Yarn 1.22+
+ ```
+ npm install -g yarn
+ ```
+
 ## Install Dependencies (frontend & backend)
 
 ```
