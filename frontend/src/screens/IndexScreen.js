@@ -17,7 +17,7 @@ const IndexScreen = ({ match }) => {
         <h2>
           <center>
             <Button href="/Q" variant="outline-secondary">
-              Lets go Cryptic->
+              Lets go Cryptic<span>&#8594;</span>
             </Button>{" "}
           </center>
         </h2>
