@@ -1,22 +1,17 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Button from 'react-bootstrap/Button'
 import { useDispatch, useSelector } from "react-redux";
 import {
     Image,
     Tabs,
     Container,
-    Overlay,
     Tab,
 } from "react-bootstrap";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
-import Meta from "../components/Meta";
 import {
     listQuestionDetails,
-    createQuestionReview,
 } from "../actions/questionActions";
-import { QUESTION_CREATE_REVIEW_RESET } from "../constants/questionConstants";
 
 
 const QuestionScreen = ({ history, match }) => {
@@ -33,14 +28,6 @@ const QuestionScreen = ({ history, match }) => {
 
     function ControlledTabs() {
         const [key, setKey] = useState("prompt");
-    function showSolution(){
-        var x = document.getElementById("solution")
-        if(x.style.display=="none"){
-            x.style.display = "block"
-        }else{
-            x.style.display = "none"
-        }
-    }
         return (
             <Tabs
                 id="Difficulty Control"

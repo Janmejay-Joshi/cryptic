@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { Container, Card, Image, Row, Col, Button } from "react-bootstrap";
+import React from "react";
+import { Container, Card, Row, Col, Button } from "react-bootstrap";
 import Meta from "../components/Meta";
-import { listQuestions } from "../actions/questionActions";
 
 const AboutUs = ({ match }) => {
   return (
